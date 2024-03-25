@@ -19,8 +19,6 @@ const Crew = () => {
   const { name } = useParams();
   const [active, setActive] = useState<number>(0);
 
-  
-
   const handleSetActive = (index: number) => {
     setActive(index);
   };
@@ -40,24 +38,27 @@ const Crew = () => {
   return (
     <>
       <div
-        className="p-6 min-h-[100vh] font-normal "
+        className="md:flex md:flex-col md:pb-0 md:p-[38.5px] p-6 min-h-[100vh] font-normal "
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
         }}
       >
-        <p className="mt-[88px] text-[16px] font-barlow text-center text-white uppercase">
+        <p className="md:mt-[97.5px] md:text-start md:text-[20px] md:tracking-[3.38px] mt-[88px] text-[16px] font-barlow text-center text-white uppercase">
           <span className="mr-[18px] font-bold font-barlow opacity-[0.25]">
             02
           </span>
           Meet your crew
         </p>
-        <div className="flex justify-center mt-8">
-          <img className="w-[170px] h-[170px] " src={data?.images.png} />
+        <div className="md:mt-10 md:order-2 flex justify-center mt-8">
+          <img
+            className="md:w-[456.4px] md:h-[532px] w-[170px] h-[170px] "
+            src={data?.images.png}
+          />
         </div>
-        <div className="h-[1px] bg-divColor"></div>
-        <div className="mt-[26px] flex gap-[25.5px] justify-center">
+        <div className="md:hidden h-[1px] bg-divColor"></div>
+        <div className="md:mt-10 md:order-1 mt-[26px] flex gap-[25.5px] justify-center">
           {Data.crew.map((item, index) => {
             return (
               // როგორ ხვდება რომელი ითემ ნეიმი მიანიჭოს
@@ -75,13 +76,13 @@ const Crew = () => {
           })}
         </div>
         <div className="mt-[26px] "></div>
-        <p className=" text-light text-[16px] text-center font-bellefair opacity-[0.5] mt-8 uppercase">
+        <p className="md:text-[24px] md:mt-[60px] text-light text-[16px] text-center font-bellefair opacity-[0.5] mt-8 uppercase">
           {data?.role}
         </p>
-        <h1 className="text-[24px]  text-white  font-bellefair text-center mt-[8px] uppercase">
+        <h1 className="md:text-[40px]  text-[24px]  text-white  font-bellefair text-center mt-[8px] uppercase">
           {data?.name}
         </h1>
-        <p className="mt-4 text-center text-[15px]  font-barlow text-light  ">
+        <p className="md:text-[16px] mt-4 text-center text-[15px] font-normalBarlow text-light  ">
           {data?.bio}
         </p>
       </div>
