@@ -11,8 +11,8 @@ const Menu: React.FC<menuType> = ({
   console.log(hideMenu);
   return (
     <div
-      className={`md:justify-between md:left-[318px] md:flex md:flex-row md:h-[96px] md:pt-0 md:pl-[48px] md:pr-[48px]  absolute z-10 left-[121px] h-full bg-blur right-0 top-0 backdrop-blur-[81.5px] pl-8 pt-[34px] ${
-        !hideMenu ? "block  animate-slideLeft md:animate-none" : "hidden "
+      className={`xl:pl-[123px] x;:pr-[167px] xl:right-0 xl:left-[610px] xl:top-10 md:justify-between md:left-[318px] md:flex md:flex-row md:h-[96px] md:pt-0 md:pl-[48px] md:pr-[48px]  absolute z-10 left-[121px] h-full bg-blur right-0 top-0 backdrop-blur-[81.5px] pl-8 pt-[34px] ${
+        !hideMenu ? "block animate-slideLeft md:animate-none" : "hidden "
       }`}
     >
       <div className="flex justify-end pr-[26.5px] md:hidden">
@@ -31,7 +31,7 @@ const Menu: React.FC<menuType> = ({
           className=" md:mt-[39px] md:h-available md:flex-col cont mt-[60px] flex items-center h-[31px] hover:cursor-pointer "
         >
           <p className="  md:text-[14px] md:tracking-[2.36px] font-barlow text-4  tracking-[2.7px] text-white ">
-            <span className="md:hidden">00</span>{" "}
+            <span className="md:hidden xl:inline">00</span>{" "}
             <span className="font-normal ">HOME</span>
           </p>
           <div
@@ -52,8 +52,8 @@ const Menu: React.FC<menuType> = ({
           }}
           className="md:mt-[39px] md:h-available md:flex-col cont mt-[60px] flex items-center h-[31px] hover:cursor-pointer "
         >
-          <p className=" md:text-[14px] md:tracking-[2.36px] font-barlow text-4  tracking-[2.7px] text-white ">
-            <span className="md:hidden">01</span>{" "}
+          <p className="xl:text-[16px] md:text-[14px] md:tracking-[2.36px] font-barlow text-4  tracking-[2.7px] text-white ">
+            <span className="md:hidden  xl:inline">01</span>{" "}
             <span className="font-normal ">DESTINATION</span>
           </p>
           <div
@@ -71,8 +71,8 @@ const Menu: React.FC<menuType> = ({
           }}
           className="md:mt-[39px] md:h-available md:flex-col cont mt-[60px] flex items-center h-[31px] hover:cursor-pointer "
         >
-          <p className=" md:text-[14px] md:tracking-[2.36px] font-barlow text-4 font-bold tracking-[2.7px] text-white ">
-            <span className="md:hidden">02</span>{" "}
+          <p className="xl:text-[16px] md:text-[14px] md:tracking-[2.36px] font-barlow text-4 font-bold tracking-[2.7px] text-white ">
+            <span className="md:hidden  xl:inline">02</span>{" "}
             <span className="font-normal ">CREW</span>
           </p>
           <div
@@ -90,8 +90,8 @@ const Menu: React.FC<menuType> = ({
           }}
           className="md:mt-[39px] md:h-available md:flex-col cont mt-[60px] flex items-center h-[31px] hover:cursor-pointer "
         >
-          <p className=" md:text-[14px] md:tracking-[2.36px] font-barlow text-4 font-bold tracking-[2.7px] text-white ">
-            <span className="md:hidden">03</span>{" "}
+          <p className="xl:text-[16px] md:text-[14px] md:tracking-[2.36px] font-barlow text-4 font-bold tracking-[2.7px] text-white ">
+            <span className="md:hidden  xl:inline">03</span>{" "}
             <span className="font-normal ">TECHNOLOGY</span>
           </p>
           <div

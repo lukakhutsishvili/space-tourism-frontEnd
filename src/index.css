@@ -154,8 +154,9 @@ body,
   animation: slideLeft 0.7s forwards;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .trans {
     transition: width 0.3s linear, height 0.3s linear;
   }
 }
+

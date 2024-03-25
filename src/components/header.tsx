@@ -4,7 +4,7 @@ import { headerType } from "../type";
 
 const Header: React.FC<headerType> = ({ setHideMenu, hideMenu }) => {
   return (
-    <header className="md:left-[39px] flex justify-between items-center absolute top-6 left-6 right-6 ">
+    <header className="xl:left-[55px] xl:top-[64px] xl:justify-normal md:left-[39px] flex justify-between items-center absolute top-6 left-6 right-6 ">
       <img src={logo} alt="logo" />
       <img
         className="hover:cursor-pointer md:hidden"
@@ -12,6 +12,7 @@ const Header: React.FC<headerType> = ({ setHideMenu, hideMenu }) => {
         alt="manuButton"
         onClick={() => setHideMenu(!hideMenu)}
       />
+      <div className="hidden ml-[112px] absolute z-20 xl:block h-[2px] min-w-[473px] bg-divColor"></div>
     </header>
   );
 };

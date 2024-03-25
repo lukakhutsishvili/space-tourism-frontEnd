@@ -16,6 +16,10 @@ export default {
         hoveExplore: "rgba(255, 255, 255, 0.1)",
         borderColor: "rgba(255, 255, 255, 0.25)",
       },
+      animation: {
+        slideLeft: "slideLeft 0.7s forwards",
+        popup: "popup 1s both",
+      },
       keyframes: {
         slideLeft: {
           from: {
@@ -25,14 +29,6 @@ export default {
             left: "121px",
           },
         },
-      },
-      animation: {
-        slideLeft: "slideLeft 0.7s forwards",
-      },
-      animation: {
-        popup: "popup 1s both",
-      },
-      keyframes: {
         popup: {
           "0%": { width: "150px", height: "150px" },
           "100%": { width: "200px", height: "200px" },
@@ -42,7 +38,7 @@ export default {
         calc: "calc(100% + 1px)",
       },
       height: {
-        available: " -webkit-fill-available",
+        available: "-webkit-fill-available",
       },
       screens: {
         xl: "1440px",
