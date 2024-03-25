@@ -1,14 +1,12 @@
-import backgroundImage from "/home/background-home-mobile.jpg";
-
 const Home: React.FC<{ setHideMenu(param: boolean): void }> = ({
   setHideMenu,
 }) => {
   return (
     <>
       <div
-        className="md:p-[162px] p-6 min-h-[100vh] font-normal "
+        className="md:p-[162px] p-6 min-h-[100vh] font-normal xl:bg-[url('/home/background-home-desktop.jpg')] md:bg-[url('/home/background-home-tablet.jpg')] bg-[url('/home/background-home-mobile.jpg')] "
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          // backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
         }}

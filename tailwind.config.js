@@ -44,6 +44,9 @@ export default {
       height: {
         available: " -webkit-fill-available",
       },
+      screens: {
+        xl: "1440px",
+      },
     },
   },
   plugins: [],

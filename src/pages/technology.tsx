@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import backgroundImage from "/crew/background-crew-mobile.jpg";
+import backgroundImage from "/technology/background-technology-mobile.jpg";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Data from "../data.json";
@@ -37,7 +37,7 @@ const Technology = () => {
   return (
     <>
       <div
-        className="md:pt-[38.5px] md:pb-[96px]  pt-6 min-h-[100vh] font-normal "
+        className="md:pt-[38.5px] md:pb-[96px]  pt-6 min-h-[100vh] font-normal xl:bg-[url('/technology/background-technology-desktop.jpg')] md:bg-[url('/technology/background-technology-tablet.jpg')] bg-[url('/technology/background-technology-mobile.jpg')]  "
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",

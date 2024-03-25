@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-import backgroundImage from "/destination/background-destination-mobile.jpg";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Data from "../data.json";
@@ -39,9 +38,8 @@ const Destination = () => {
   return (
     <>
       <div
-        className="md:p-[38.5px] p-6 min-h-[100vh] font-normal "
+        className="md:p-[38.5px] p-6 min-h-[100vh] font-normal  xl:bg-[url('/destination/background-destination-desktop.jpg')] md:bg-[url('/destination/background-destination-tablet.jpg')] bg-[url('/destination/background-destination-mobile.jpg')] "
         style={{
-          backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
         }}

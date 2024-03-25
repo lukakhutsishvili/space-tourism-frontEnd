@@ -38,7 +38,7 @@ const Crew = () => {
   return (
     <>
       <div
-        className="md:flex md:flex-col md:pb-0 md:p-[38.5px] p-6 min-h-[100vh] font-normal "
+        className="md:flex md:flex-col md:pb-0 md:p-[38.5px] p-6 min-h-[100vh] font-normal  xl:bg-[url('/crew/background-crew-desktop.jpg')] md:bg-[url('/crew/background-crew-tablet.jpg')] bg-[url('/crew/background-crew-mobile.jpg')] "
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
@@ -53,7 +53,7 @@ const Crew = () => {
         </p>
         <div className="md:mt-10 md:order-2 flex justify-center mt-8">
           <img
-            className="md:w-[456.4px] md:h-[532px] w-[170px] h-[170px] "
+            className="md:min-w-[456.4px] md:min-h-[532px] w-[170px] h-[170px] "
             src={data?.images.png}
           />
         </div>
